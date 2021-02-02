@@ -1,0 +1,18 @@
+//Create a Coin class, give it the ability to flip, create an instance of the class and flip some coins! 
+//How would you use the random() function with a range to accomplish the coin flip?
+
+fun main() {
+    val myCoin = Coin()
+	myCoin.flip()
+}
+
+class Coin {
+    fun flip(){
+        val flipValue = Math.random()
+        println(flipValue)
+        if (flipValue < 0.5) {
+            println("Heads")
+        }
+        else println("Tails")
+    }
+}
